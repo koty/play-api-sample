@@ -1,0 +1,17 @@
+postgres-data:
+  image: busybox
+  volumes:
+      - /var/lib/postgresql/data
+  container_name: postgres-datastore-play-api-sample
+
+postgresql:
+  image: postgres:13.1
+  environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+  ports:
+      - "5430:5432"
+  container_name: postgres-db-play-api-sample
+  volumes_from:
+      - postgres-data
+
