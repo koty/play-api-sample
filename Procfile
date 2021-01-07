@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/play-api-sample -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Ddb.default.driver=org.postgresql.Driver -Dslick.dbs.default.db.url=${DATABASE_CONNECTION_URL} -Dplay.http.secret.key=${APPLICATION_SECRET}
