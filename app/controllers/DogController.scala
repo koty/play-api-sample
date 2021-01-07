@@ -17,7 +17,7 @@ class DogController @Inject() (cc: ControllerComponents, dogDao: DogDAO)
     }
   }
 
-  def insertDog(): Action[JsValue] = Action(parse.json) { request =>
+  def insertDog: Action[JsValue] = Action(parse.json) { request =>
     // 現状だとidが必須。。。
     request.body.validate[Dog] match {
       case s: JsSuccess[Dog] =>
