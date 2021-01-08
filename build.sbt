@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   "org.postgresql"       % "postgresql"             % "42.2.18",
   "com.typesafe.play"    %% "play-slick"            % "5.0.0",
   "com.typesafe.play"    %% "play-slick-evolutions" % "5.0.0",
+  "com.typesafe.akka"    %% "akka-actor"            % "2.6.10",
 )
 
 // Adds additional packages into Twirl

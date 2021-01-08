@@ -2,3 +2,4 @@ GET     /hello                      controllers.HelloController.hello
 POST    /hello                      controllers.HelloController.helloJson
 GET     /dogs                       controllers.DogController.index
 POST    /dogs                       controllers.DogController.insertDog
+GET     /ws                         controllers.WSController.socket
